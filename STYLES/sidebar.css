@@ -1,0 +1,37 @@
+.sidebar{
+    position: fixed;
+    background-color: white;
+    top: 55px;
+    bottom:0px;
+   
+  left:0px;
+  width: 72px;
+  z-index: 1;
+  padding-top: 5px;
+}
+
+  .sidebaricon{
+    /* background-color: gray; */
+    /* height:74px; */
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width:100%;
+    height:74px;
+  /* margin-bottom:20px; */
+ cursor: pointer;
+
+     /* margin-bottom: 2px; */
+  }
+  .sidebaricon:hover{
+ background-color: lightgray;
+  }
+.sidebaricon img {
+  height: 24px;
+  margin-bottom:4px;
+}
+.sidebaricon div{
+  font-family: Roboto;
+  font-size:10px;
+}

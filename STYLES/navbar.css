@@ -1,0 +1,145 @@
+.navbar{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+    border-width: 1px;
+    border-color: rgb(241, 238, 238);
+    border-style: solid;
+    z-index: 1;
+
+}
+.left-section{
+    /* background-color: aqua; */
+    /* width: 150px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    
+}
+.hamburger{
+    height: 24px;
+     margin-right: 24px;
+     margin-left: 24px;
+}
+.logo{
+    height:20px;
+}
+.notifi-num{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    position:absolute;
+    bottom:0px;
+    right:-3px;
+    font-family: Roboto;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.notifi-img{
+    position: relative;
+}
+.middle-section{
+    /* background-color: lightpink;    */
+    margin-left: 70px;
+    margin-right: 35px;
+    flex: 1;   
+    /* because the the search bar is flexible with the screensize */
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.middle-section input{
+    flex:1;
+    height:36px;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: gray;
+    box-shadow: inset 1px 2px 3px rgba(0, 0,0, 0.05);
+    width: 0;  /* so that it will shrink as much as possibe */
+
+}
+.middle-section input::placeholder{
+    font-family: Roboto;
+    padding-left:10px;
+
+}
+.search{
+    position:relative;
+    height:39px ;
+    /* width:66px; */
+    background-color: rgb(244 242 242);
+    border-radius: 2px;
+    border-width:1px;
+    border-style: solid;
+    border-color: gray;
+    box-shadow: inset 1px 2px 3px rgba(0, 0,0, 0.15);
+  margin-left:-1px;
+  margin-right: 8px;
+    
+}
+.search div{
+    position:absolute;
+    border:1px solid gray;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    padding:5px;
+    bottom:-30px;
+    opacity: 0;
+    border-radius: 2px;
+    transition: opacity 0.1s;
+    pointer-events: none; /* when you hover over the div nothin will happen
+    onyl when you hover over search butoon tooltip will appper*/
+}
+.search:hover div
+{
+    opacity: 1;
+}
+.search img{
+    height: 24px;
+    margin-top:3px;
+}
+.voice-search{
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    border:none;
+}
+.voice-search img{
+    height: 30px;
+    margin-top: 3px;
+   
+}
+.right-section{
+    /* background-color: bisque; */
+    width: 180px;
+    
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     margin-right: 20px;
+     flex-shrink:0;  /*to avoid shrinking when page made smaller*/
+     
+}
+.img1,.img2,.img3{
+    height:24px;
+    /* margin-right: 20px; */
+}
+.profilepic{
+    height: 35px;
+    border-radius: 15px;
+}
